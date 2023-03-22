@@ -1,42 +1,119 @@
 # pdi
 
+Obter formatado:
+```bash
+sed '/:/d; /mindmap/d; s/  / /g' *.mmd | sed 's/[()]//g'; echo;
+```
+
+## hardskills
 ```mermaid
 mindmap
-  root((PDI))
-    Eletrônica
-    ::icon(fa fa-user)
-        Circuit designing
-        PCB designing
+  (Hardskills)
+  ::icon(fa fa-laptop)
+    (Electronics)
+    ::icon(fa fa-microchip)
+        Circuit/PCB designing
+            Altium
+            Eagle
+            KiCad
         Prototyping
         Soldering
-    IoT
-        uC
+            Tipo 1
+            Tipo 2
+            Tipo 3
+    (IoT)
+    ::icon(fa fa-cloud)
+        Devices
             Raspberry Pi
             Pi Cam
+            ESPCAM
             ESP32
             STM32
-        C/C++
-        RTOS
-        MQTT
-        LoRa
-        Zigbee
-        BLE
-        Mesh IoT Networks
-        Platformio
-        NB IoT
-    Tools
-        Linux
-        Git
-    DevOps
-        Docker
-        Kubernetes
-        AWS/Azure
+            Jetson NVIDIA
+        Networking
+            LoRa
+            Zigbee
+            BLE
+            Mesh IoT Networks
+            NB IoT
+        Messaging
+            MQTT
+            RabbitMQ
+            Kafka
+            NATS
+        Operating Systems
+            RTOS
+            Zephyr
+    (DevOps)
+    ::icon(fa fa-infinity)
+        General tools
+            Linux
+            Shell
+        Web
+            Networking
+            Web Protocols
+            HTTP, SSL/TLS, SSH
+        Containers & Orchestration
+            Docker
+            Kubernetes
+        Cloud Providers
+            AWS
+            Azure
+            Google Cloud Platform
         CI/CD
-    Soft skills
-        Comunicação
-        Visão sistêmica de negócio/produto
-        Flexibilidade e capacidade de adaptação
-        Resolução de problemas
+            Jenkins
+            GitLab CI
+            GitHub Actions
+            Travis CI
+            AWS Codepipeline
+            Azure DevOps
+        Monitoring
+            Zabbix
+    (Programming)
+    ::icon(fa fa-book)
+        Languages
+            C/C++
+            Rust
+            Go
+        Others
+            Clean code
+            Design patterns
     
+```
+
+## softskills
+```mermaid
+mindmap
+    (Soft skills)
+    ::icon(fa fa-users)
+        (Negócio/Produto)
+        ::icon(fa fa-suitcase)
+            Visão sistêmica de negócio/produto
+            Conceber a visão de produtos físicos e digitais
+            Definir e gerenciar o orçamento de produtos
+            Definição de métricas de produto
+            Formulação de estratégias, precificação e ações de marketing de produtos
+        (Pessoal)
+        ::icon(fa fa-user)
+            Resolução de problemas
+            Flexibilidade e capacidade de adaptação
+            Comunicação
+            Fortes habilidades de organização
+            Qualidade em entregas
+        (Projeto)
+        ::icon(fa fa-search)
+            Definir o backlog
+            Identificar features
+            Estabelecer o roadmap de produtos
+        (Planejamento)
+        ::icon(fa fa-edit)
+            Participar da etapa de product discovery
+            Identificação de hipóteses e da execução dos experimentos e produtos
+            Realizar a modelagem de negócios de produtos e definir o Product Market Fit
+        (Acompanhamento)
+        ::icon(fa fa-sticky-note)
+            Construção de experimentos e produtos
+            Implementação dos roadmaps de produtos
+            Resultados de métricas de produtos
 
 ```
