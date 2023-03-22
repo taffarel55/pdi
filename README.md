@@ -1,6 +1,6 @@
 # pdi
 
-Obter formatado:
+Para ver em lista simples:
 ```bash
 sed '/:/d; /mindmap/d; s/  / /g' *.mmd | sed 's/[()]//g'; echo;
 ```
@@ -17,10 +17,15 @@ mindmap
             Eagle
             KiCad
         Prototyping
+            Board assembly
+            Test board creation
+            Pretotyping
         Soldering
-            Tipo 1
-            Tipo 2
-            Tipo 3
+            Lead solder
+            Lead free
+            Heat gun
+            SMD components
+            Paste solder
     (IoT)
     ::icon(fa fa-cloud)
         Devices
@@ -42,7 +47,7 @@ mindmap
             Kafka
             NATS
         Operating Systems
-            RTOS
+            FreeRTOS
             Zephyr
     (DevOps)
     ::icon(fa fa-infinity)
@@ -84,7 +89,7 @@ mindmap
 ## softskills
 ```mermaid
 mindmap
-    (Soft skills)
+    (Soft/Bussiness skills)
     ::icon(fa fa-users)
         (Negócio/Produto)
         ::icon(fa fa-suitcase)
