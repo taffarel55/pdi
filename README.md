@@ -49,6 +49,9 @@ mindmap
         Operating Systems
             FreeRTOS
             Zephyr
+            BalenaOS
+        Cloud
+            BalenaCloud
     (DevOps)
     ::icon(fa fa-infinity)
         General tools
